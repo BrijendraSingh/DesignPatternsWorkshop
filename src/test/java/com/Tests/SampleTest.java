@@ -17,6 +17,7 @@ public class SampleTest extends BaseClass {
     @Test
     public void RegistrationTest() {
         HomePage homePage = new HomePage(driver);
-        homePage.clickSignIn().enterEmailToRegister("thoughtworks@tw1.com").registerUser(new NewUser());
+        homePage.clickSignIn().enterEmailToRegister("thoughtworks@tw1.com").registerUser(new NewUser().
+                addAdditionalAddress("TW").addAdditionInfo("Additional Info"));
     }
 }

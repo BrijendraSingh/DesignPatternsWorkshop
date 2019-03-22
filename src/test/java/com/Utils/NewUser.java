@@ -10,17 +10,27 @@ public class NewUser {
         this.lastName = "thoughtworks";
 //        this.email = "tw@thoughtworks.com";
         this.password = "password123";
-//        this.days = "16";
-//        this.months ="12";
+//        this.days = "04";
+//        this.months ="11";
 //        this.years= "1991";
-//        this.company = "Yello Company";
+//        this.company = "TW";
         this.address1 = "Bangalore Koramangala";
-//        this.address2 = "Jalan Jalan Sore";
+        this.address2 = "Bangalore";
         this.city = "Bangalore";
         this.postcode = "90876";
         this.state = "5";
 //        this.phone = "081789567328";
         this.phoneMobile = "1234567890";
 //        this.additionalInfo = "hello hello";
+    }
+
+    public NewUser addAdditionalAddress(String tw) {
+        this.address2 = tw;
+        return this;
+    }
+
+    public NewUser addAdditionInfo(String s) {
+        this.additionalInfo = s;
+        return this;
     }
 }

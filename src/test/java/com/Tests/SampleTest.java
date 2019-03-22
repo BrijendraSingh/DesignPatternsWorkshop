@@ -15,13 +15,6 @@ public class SampleTest extends BaseClass {
     }
 
     @Test
-    public void SignInTestForResponsive() {
-        HomePage homePage = new HomePage(driver);
-        homePage.clickSignIn().enterCredentials("test@thoughtworks.com", "password")
-                .validateMyAccoutPageForResponsive();
-    }
-
-    @Test
     public void RegistrationTest() {
         HomePage homePage = new HomePage(driver);
         homePage.clickSignIn().enterEmailToRegister("thoughtworks@tw1.com").registerUser(new NewUser());

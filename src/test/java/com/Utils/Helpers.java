@@ -8,10 +8,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Helpers {
 
     public WebDriver driver;
+    public IRunner runner;
     WebDriverWait webDriverWait;
 
     public Helpers(WebDriver driver) {
         this.driver = driver;
+        this.runner = BaseClass.runner;
         webDriverWait = new WebDriverWait(driver, 15);
     }
 
@@ -19,4 +21,5 @@ public class Helpers {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(by));
         return by;
     }
+
 }

@@ -13,7 +13,7 @@ public class Helpers {
 
     public Helpers(WebDriver driver) {
         this.driver = driver;
-        this.runner = BaseClass.runner;
+        this.runner = BrowserFactory.runner;
         webDriverWait = new WebDriverWait(driver, 15);
     }
 
